@@ -53,13 +53,13 @@ def train_model(project_path, training_path):
 
 
     # ajustar modelo
-    print("Entrando modelo...")
+    print("Entrenando modelo...")
     model = lgb.train(params,
                     train_set=lgb_train,
                     valid_sets=lgb_eval)
 
 
-    model.save_model(project_path +"/model/lightgbm_best.txt")
+    model.save_model(project_path +"/model/lightgbm_run2.txt")
     print("Modelo guardado...")
     y_pred = model.predict(x_test)
     rmse = root_mean_squared_error(y_test, y_pred)

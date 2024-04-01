@@ -3,13 +3,22 @@ Pronostico tarifa taxi
 
 
 # Instalar requerimientos
-
+!! Es necesario  se requiere tener configurado el api token de Kaggle para poder descargar los datos
+Se requiere python 3.9 o superior
 
 ```
 pip install -r requirements.txt
 ```
 
-Para descargar los datos de kaggle se requiere tener configurado el api token
+## Ejecutar todo el proyecto
+Ejecuta el pipeline completo de datos
+
+Descargar datos -> limpiar datos -> 
+    Entrenar modelo -> Predicciones sobre datos test
+
+```
+python run.py
+```
 
 # Estructura de proyecto
 
@@ -35,13 +44,4 @@ Para descargar los datos de kaggle se requiere tener configurado el api token
 
 ```
 
-## Ejecutar todo el proyecto
-Ejecuta el pipeline completo de datos
-
-Descargar datos -> limpiar datos -> 
-    Entrenar modelo -> Predicciones sobre datos test
-
-```
-python run.py
-```
 

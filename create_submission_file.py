@@ -21,8 +21,7 @@ def creat_file_to_submission(projec_path:str):
     # cargar modelo
 
     model = lgb.Booster(
-        model_file=projec_path + "/model/lightgbm_best.txt")
-
+        model_file=projec_path + "/model/lightgbm_run2.txt")
 
     y_pred = model.predict(to_test)
 
@@ -39,4 +38,3 @@ if __name__ == "__main__":
 
     PROJECT_PATH = os.path.dirname(__file__)
     creat_file_to_submission(PROJECT_PATH)
-

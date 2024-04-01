@@ -1,0 +1,9 @@
+polars==0.20.17
+lightgbm==4.3.0
+kaggle==1.6.8
+seaborn==0.13.2
+vaex==4.17.0
+optuna==3.6.0
+scikit-learn==1.4.1.post1
+dask==2024.4.0
+dask-expr==1.0.6

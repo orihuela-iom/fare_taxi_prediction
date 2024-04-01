@@ -19,7 +19,6 @@ TRAINING_DATA_PATH = "/data/to_train"
 TRAIN_DATA_SIZE = 10_000_000
 TRAINING_PROPORTION = 0.8
 
-
 # 01 Descargar datos
 download_data(PROJECT_PATH + RAW_DATA_PATH)
 
