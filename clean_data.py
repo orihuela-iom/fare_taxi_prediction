@@ -1,5 +1,6 @@
 """
-Limpieza de datos
+Procesado y particionado de los datos de la competencia
+new-york-city-taxi-fare-prediction,
 
 @author: Ismael Orihuela
 """

@@ -1,12 +1,14 @@
 """
-Ejecuta el proyecto completo
+Ejecuta el pipeline completo de datos
+
+Descargar datos -> limpiar datos -> Entrenar modelo -> Predicciones sobre datos test
 """
+
 import os
 from get_data import download_data
 from clean_data import export_data, split_train_test_data
 from train import train_model
 from create_submission_file import creat_file_to_submission
-
 
 PROJECT_PATH = os.path.dirname(__file__)
 
