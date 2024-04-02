@@ -21,6 +21,11 @@ Descargar datos -> limpiar datos ->
 python run.py
 ```
 
+# Score Kaggle
+![Referencia](outputs/Captura.JPG)
+
+
+
 # Estructura de proyecto
 
 ```
