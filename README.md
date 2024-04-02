@@ -1,7 +1,7 @@
 # Pronóstico tarifa taxi 
 
 
-# Es necesario configurar el api token de Kaggle para poder descargar los datos!!!!!
+## Es necesario configurar el api token de Kaggle para poder descargar los datos o colocar el archivo new-york-city-taxi-fare-prediction.zip dentro de la carpeta /data/raw_data/
 
 # Instalar requerimientos
 
