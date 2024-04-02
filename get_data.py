@@ -10,7 +10,11 @@ import zipfile
 
 def download_data(raw_data_path):
     """
-    Descarga y descomprime todos los archivos del proyecto 
+    Descarga y descomprime todos los archivos del proyecto
+
+    Parameters: 
+    --------
+        raw_data_path(str): ruta de datos sin procesar
     """
     if os.path.exists(raw_data_path + "/new-york-city-taxi-fare-prediction.zip") is False:
         from kaggle.api.kaggle_api_extended import KaggleApi

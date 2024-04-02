@@ -46,5 +46,5 @@ split_train_test_data(
 # 05 entrenar modelo
 train_model(PROJECT_PATH, TRAINING_DATA_PATH)
 
-# crear arhivo para competencia
+# 06 crear arhivo para competencia
 creat_file_to_submission(PROJECT_PATH)

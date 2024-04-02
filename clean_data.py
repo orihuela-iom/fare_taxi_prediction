@@ -245,10 +245,10 @@ def export_data(raw_data_path:str, output_path:str,
     
     Parameters:
     -----------
-        raw_data_path: Ruta del archivo csv
+        raw_data_path: Ruta del archivo csv sin procesar
         mode(str): {over_write, preserve} si el valor es over_write sobre escribe el archivo 
             con datos limpios
-            si el valor es preserve, y existe un archivo con los datos limpios omite el procesos
+            si el valor es preserve, y existe un archivo con los datos limpios omite el proceso
     """
 
     file_path =  f"{output_path}/{output}.parquet"

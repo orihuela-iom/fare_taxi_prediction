@@ -17,7 +17,12 @@ warnings.filterwarnings("ignore")
 
 def train_model(project_path, training_path):
     """
-    Entrena modelo
+    Entrena modelo lightgbm
+
+    Parameters: 
+    --------
+        project_path(str): ruta principal del proyecto
+        training_path(str): ruta de datos de entrenamiento
     """
     #read_options = csv.ReadOptions(autogenerate_column_names=True)
 
