@@ -6,28 +6,30 @@ url de los datos: https://www.kaggle.com/competitions/new-york-city-taxi-fare-pr
 """
 import os
 import zipfile
-from kaggle.api.kaggle_api_extended import KaggleApi
 
-
-api = KaggleApi()
-api.authenticate()
 
 def download_data(raw_data_path):
     """
     Descarga y descomprime todos los archivos del proyecto 
     """
-    api.competition_download_files("new-york-city-taxi-fare-prediction",
-        path=raw_data_path, force=False, quiet=False)
+    if os.path.exists(raw_data_path + "/new-york-city-taxi-fare-prediction.zip") is False:
+        from kaggle.api.kaggle_api_extended import KaggleApi
+        api = KaggleApi()
+        api.authenticate()
+        api.competition_download_files("new-york-city-taxi-fare-prediction",
+            path=raw_data_path, force=False, quiet=False)
 
-    # comprobar si esxisten los archivos csv
-    # en caso de no exister decomprime el zip
-    if  os.path.exists(raw_data_path + "/test.csv") is False or\
-        os.path.exists(raw_data_path + "/train.csv") is False:
+        # comprobar si esxisten los archivos csv
+        # en caso de no exister decomprime el zip
+        if  os.path.exists(raw_data_path + "/test.csv") is False or\
+            os.path.exists(raw_data_path + "/train.csv") is False:
 
-        with zipfile.ZipFile(raw_data_path + "/new-york-city-taxi-fare-prediction.zip", 'r') as zip_ref:
-            zip_ref.extractall(raw_data_path)
+            with zipfile.ZipFile(raw_data_path + "/new-york-city-taxi-fare-prediction.zip", 'r') as zip_ref:
+                zip_ref.extractall(raw_data_path)
+        print("Descarga exitosa")
+    else:
+        print("Datos encontrados")
 
-    print("Descarga exitosa")
 
 
 if __name__ == "__main__":

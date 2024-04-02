@@ -1,9 +1,10 @@
-# fare_taxi_prediction
-Pronostico tarifa taxi 
+# Pronóstico tarifa taxi 
 
+
+# Es necesario configurar el api token de Kaggle para poder descargar los datos!!!!!
 
 # Instalar requerimientos
-!! Es necesario  se requiere tener configurado el api token de Kaggle para poder descargar los datos
+
 Se requiere python 3.9 o superior
 
 ```
